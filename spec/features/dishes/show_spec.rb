@@ -25,4 +25,8 @@ RSpec.describe 'Dish Show Page', type: :feature do
       end
     end
   end
+
+  it 'lists the total calories' do
+    expect(page).to have_content("Total Calories: #{@dish.total_calories}")
+  end
 end

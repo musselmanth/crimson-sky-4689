@@ -1,5 +1,6 @@
 <h1 id="dish_title"><%= @dish.name.titleize %></h1>
 <h3><strong>Chef: </strong><%= @dish.chef.name %></h3>
+<h3 id="total_calories">Total Calories: <%= @dish.total_calories %></h3>
 <h3 id="ingredients_title">Ingredients:</h3>
 <ul id="ingredient_list">
   <% @dish.ingredients.each do |ingredient| %>
