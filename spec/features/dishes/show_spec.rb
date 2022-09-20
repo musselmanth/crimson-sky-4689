@@ -8,8 +8,9 @@ RSpec.describe 'Dish Show Page', type: :feature do
     visit(dish_path(@dish.id))
   end
 
-  it 'shows the name of the dish' do
+  it 'shows the name and description of the dish' do
     expect(page).to have_content(@dish.name)
+    expect(page).to have_content(@dish.description)
   end
 
   it 'shows the name of the chef' do
