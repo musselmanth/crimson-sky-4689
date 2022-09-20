@@ -1,0 +1,8 @@
+<h1>Chef <%= @chef.name %>'s Used Ingredients:</h1>
+<ul id="ingredient_list">
+  <% @ingredients.each do |ingredient| %>
+    <li id="ingredient_<%= ingredient.id %>">
+      <%= ingredient.name %>
+    </li>
+  <% end %>
+</ul>
